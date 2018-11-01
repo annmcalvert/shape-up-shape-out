@@ -1,0 +1,13 @@
+#background {
+    background-color: lightskyblue;
+    height: 600px;
+    width: 600px;
+    display: inline-block;
+}
+
+#sidePanel {
+    background-color: lightgray;
+    height: 600px;
+    width:300px;
+    display: inline-block;
+}
