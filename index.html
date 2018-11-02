@@ -11,34 +11,44 @@
 
 <body>
 
-    <form>
+    <!-- <form> -->
 
         <h2>Rectangle</h2>
         Width:
-        <input type="text" name="width">
+        <input type="text" name="width" id="width">
         Height:
-        <input type="text" name="height">
-        <input type="submit" value="submit">
+        <input type="text" name="height" id="heightRectangle">
+        <input type="submit" value="submit" id="rectangleBtn">
 
         <h2>Square</h2>
         Side Length:
-        <input type="text" name="sideLength">
-        <input type="submit" value="submit">
+        <input type="text" name="sideLength" id="sideLength">
+        <input type="submit" value="submit" id="squareBtn">
+        <!-- <button id="squareBtn">submit</button> -->
 
         <h2>Circle</h2>
         Radius:
-        <input type="text" name="radius">
-        <input type="submit" value="submit">
+        <input type="text" name="radius" id="radius">
+        <input type="submit" value="submit" id="circleBtn">
 
         <h2>Isoceles Right Triangle</h2>
         Height:
-        <input type="text" name="height">
-        <input type="submit" value="submit">
+        <input type="text" name="height" id="heightTriangle">
+        <input type="submit" value="submit" id="triangleBtn">
 
-    </form>
+    <!-- </form> -->
 
-    <div id="background"></div>
-    <div id="sidePanel"></div>
+    <button id="testBtn">test</button><br>
+
+    <div id="div"></div>
+    <div id="sidePanel">
+        <p id="shapeName">Shape Name:</p>
+        <p id="width">Width:</p>
+        <p id="height">Height:</p>
+        <p id="radius">Radius:</p>
+        <p id="area">Area:</p>
+        <p id="perimeter">Perimeter:</p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
