@@ -1,32 +1,51 @@
+body {
+    font-family: sans-serif;
+}
+
 #div {
     background-color: lightskyblue;
     height: 600px;
     width: 600px;
-    display: inline-block;
+    float: left;
 }
 
 #sidePanel {
-    background-color: lightgray;
-    height: 600px;
-    width:300px;
-    display: inline-block;
+    /* background-color: lightgray;
+    height: 400px;
+    width: 300px; */
+    float: left;
+    padding: 10px;
+}
+
+#input-wrapper {
+    float: left;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    margin-bottom: 5px;
 }
 
 .square {
     background-color: red;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
 }
 
 .rectangle {
     background-color: green;
+    position: absolute;
 }
 
 .triangle {
-    background-color: yellow;
+    /* background-color: yellow; */
+    position: absolute;
+    width: 0;
+    height: 0;
 }
  
 .circle {
     background-color: purple;
-    
+    position: absolute;
 }
