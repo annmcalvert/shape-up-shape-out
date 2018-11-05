@@ -1,3 +1,5 @@
+//clean up comments
+
 class Shape {
     //creates shape, gives it a name and id, appends it to div
     constructor() {
@@ -17,7 +19,7 @@ class Shape {
             this.describe();
         });
     }
-    //positions the circle
+    //positions the shape
     setPosition(top, left) {
         let positionTop = Math.floor(Math.random() * (600 - top)) + 1;
         let positionLeft = Math.floor(Math.random() * (600 - left)) + 1;
