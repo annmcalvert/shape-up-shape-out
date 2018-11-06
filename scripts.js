@@ -1,31 +1,33 @@
-//clean up comments
-
 class Shape {
-    //creates shape, gives it a name and id, appends it to div
+    //creates shape and appends it to div
     constructor() {
         this.shape = $('<div>')
-        this.width = 'N/A';
-        this.height = 'N/A';
+        this.width = '';
+        this.height = '';
         this.radius = 'N/A';
-        this.area = 'N/A';
-        this.perimeter = 'N/A';
+        this.area = '';
+        this.perimeter = '';
         $('#shapeContainer').append(this.shape);
+
         //removes shape when dbl clicked
         $(this.shape).dblclick(() => {
             this.shape.remove();
             $('#shapeInfo').html('');
         })
+
+        //gives info when shape is clicked
         $(this.shape).click(() => {
             this.describe();
         });
     }
-    //positions the shape
+    //positions the shape in the div
     setPosition(top, left) {
         let positionTop = Math.floor(Math.random() * (600 - top)) + 1;
         let positionLeft = Math.floor(Math.random() * (600 - left)) + 1;
         this.shape.css({ 'margin-top': `${positionTop}px`, 'margin-left': `${positionLeft}px` });
     }
 
+    //gives shape info
     describe(width, height, radius, area, perimeter) {
         let shapeInfo = `Shape Name: ${this.name}<br>Width: ${this.width}<br>Height: ${this.height}<br>Radius: ${this.radius}<br>Area: ${this.area}<br>Perimeter: ${this.perimeter}`;
         $('#shapeInfo').html(shapeInfo);
@@ -84,7 +86,6 @@ class Square extends Shape {
     constructor(sideLength) {
         super();
         this.name = 'Square';
-        //this.sideLength = sideLength;
         this.width = sideLength;
         this.height = sideLength;
         this.area = sideLength * sideLength;
